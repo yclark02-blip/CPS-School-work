@@ -79,3 +79,13 @@ h1 {
   align-items: center;
   background-color: var(--text-color);
 }
+
+.footer {
+  display: flex;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  bottom: 0px;
+}
