@@ -29,12 +29,12 @@
   <form name="my form">
     <label> 
       <div>
-        Email: 
-        <input type="text" name="email" id="emial">
+        Name: 
+        <input type="text" name="name" id="name">
       </label>
 
       </div>
-  <lable for="checkbox"> By checking "yes" you are s=agreeing to recive mail notifications! </lable>
+  <lable for="checkbox"> By checking "yes" you are agreeing to recive mail notifications! </lable>
   <div style=display:flex;>
   <input type="checkbox" name="checkbox">
   <div>Yes</div>
@@ -47,9 +47,22 @@
 
   </button>
   <input type="submit" onclick="Fsub()"/>
+
   <script>
     function Fsub() {
- alert("Form has been submitted! Thank You!");
+const myVar="this is a string";
+console.log(myVar);
+const nameInput = document.getElementById("name").value
+console.log(nameInput);
+alert("Thanks for submitting, " +nameInput);
+
+function subNumbers(numOne, numTwo) {
+  return numOne - numTwo;
+  console.log(
+    subNumbers()
+  )
+}
     }
+    
   </script>
   </form>
