@@ -18,7 +18,7 @@
     <a href="/page3.html"> Page 3 </a>
     <a href="/page4.html"aria-current="page"> Page 4</a>
   </nav>
-  <h3> See what other car parts you would like!</h3>
+  <h3> See what other car parts you would like! Scroll down if you'd like to recive emails!</h3>
   <div class="parent">
     <div class="child">Starters</div>
     <div class="child">Wheels</div>
@@ -66,3 +66,28 @@ function subNumbers(numOne, numTwo) {
     
   </script>
   </form>
+
+  <label>
+    Dark mode 
+    <input type="checkbox" onchange="toggleDarkMode()" />
+  </label>
+  <script>
+    let darkMode = false;
+    function toggleDarkMode() {
+      // Check if darkMode is false
+      // If it's false -> change to true
+      // If it's true -> change to false 
+      console.log("Dark mode initially is" + darkMode);
+      if (darkMode == true) {
+        darkMode = false;
+        document.body.style["backgroundColor"] = "#000000";
+        document.body.style["color"] = "#368561"
+      } else {
+        //Turn on dark mode
+        darkMode = true;
+        document.body.style["backgroundColor"] = "Black";
+        document.body.style["color"] = "#000000"
+      }
+      cosole.log("Dark mode has been changed to" + darkMode);
+    } 
+  </script>
